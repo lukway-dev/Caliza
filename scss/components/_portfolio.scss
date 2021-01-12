@@ -1,0 +1,72 @@
+.portfolio{
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: $color-4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.card{
+  width: 300px;
+  height: 500px;
+  border: 2px solid $color-2;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px gray;
+  background-color: $color-3-light;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  &_img{
+    width: 100%;
+    border: 2px solid $color-4;
+    border-radius: 10px 10px 0 0;
+    &::selection{
+      background-color: $color-1-dark;
+      color: white;
+    }
+  }
+  &_title{
+    margin: 12px 0;
+    color: $color-1-dark;
+    font-family: $font-1;
+    font-size: 22px;
+    &::selection{
+      background-color: $color-1-dark;
+      color: white;
+    }
+  }
+  &_text_container{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+      width: 10px;
+      &-thumb{
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: inset 0 0 4px gray;
+        background-color: $color-3;
+        &:hover{
+          background-color: $color-2-light;
+        }
+      }
+      &-track{
+        border-radius: 5px;
+        box-shadow: inset 0 0 4px gray;
+        background-color: $color-4;
+      }
+    }
+  }
+  &_text{
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+    &::selection{
+      background-color: $color-1-dark;
+      color: white;
+    }
+  }
+}

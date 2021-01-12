@@ -1,0 +1,101 @@
+@import "resources/data";
+@import "resources/animation";
+
+@import "components/nav";
+@import "components/start";
+@import "components/home";
+@import "components/portfolio";
+@import "components/contact";
+
+*{
+  box-sizing: border-box;
+  ::selection{
+    background-color: $color-3;
+    color: white;
+  }
+}
+
+body{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: $color-4;
+  color: $color-1;
+  font-family: $font-3;
+  overflow-x: hidden;
+  &::-webkit-scrollbar{
+    width: 12px;
+    &-thumb{
+      border: 1px solid black;
+      box-shadow: inset 0 0 4px rgb(34, 34, 34);
+      background-color: $color-1-light;
+      &:hover{
+        background-color: $color-1-dark;
+      }
+    }
+    &-track{
+      box-shadow: inset 0 0 4px gray;
+      background-color: $color-4;
+    }
+  }
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+.icon_start{
+  width: 100%;
+  height: 100%;
+  background-color: $color-1;
+  background-image: radial-gradient($color-1-light, $color-1-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute  ;
+  z-index: 999999;
+  animation: icon-start 2s 1s forwards;
+}
+
+.current-section{
+  border-bottom: 4px solid $color-4-dark;
+  background-color: $color-1-light;
+  i{
+    padding-top: 4px;
+  }
+}
+.current-section-mobile{
+  border-top: 4px solid $color-4-dark;
+  background-color: $color-1-light;
+  i{
+    padding-bottom: 4px;
+  }
+}
+
+.section_container{
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 10px gray;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hidden{
+  display: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+@import "media-query/laptop-m";
+@import "media-query/laptop-s";
+@import "media-query/tablet";
+@import "media-query/phone-l";
+@import "media-query/phone-m";
+@import "media-query/phone-s";

@@ -1,0 +1,28 @@
+@media screen and (max-width: 1024px){
+  .nav{
+    grid-template-columns: 60% 40%;
+  }
+  .home, .contact{
+    &_img_container{
+      padding: 30px;
+    }
+    &_img{
+      width: 100%;
+    }
+    &_text_container{
+      padding: 30px;
+    }
+  }
+  .contact{
+    &_link_container{
+      width: 100%;
+      padding: 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 890px){
+  .first-section{
+    height: fit-content;
+  }
+}

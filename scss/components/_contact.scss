@@ -1,0 +1,94 @@
+.contact{
+  height: calc(100vh - 50px);
+  padding: 20px;
+  &_img_container{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_img{
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px gray;
+  }
+  &_title{
+    margin-top: 0;
+    color: $color-1-dark;
+    font-family: $font-1;
+    font-size: 26px;
+  }
+  &_link_container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_link{
+    width: 100%;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 0 10px $color-1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: $font-2;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    transition: transform .3s;
+    &:hover{
+      background-color: rgb(235, 235, 235);
+      transform: scale(1.05);
+    }
+  }
+  &_icon{
+    font-size: 30px;
+    position: absolute;
+    left: 35px;
+    top: 13px;
+  }
+  .email{
+    box-shadow: 0 0 10px $color-email-dark;
+    border-color: $color-email;
+    color: $color-email;
+    &:hover{
+      border-color: $color-email-dark;
+    color: $color-email-dark;
+    }
+  }
+  .instagram{
+    box-shadow: 0 0 10px $color-instagram-dark;
+    border-color: $color-instagram;
+    color: $color-instagram;
+    &:hover{
+      border-color: $color-instagram-dark;
+      color: $color-instagram-dark;
+    }
+  }
+  .facebook{
+    box-shadow: 0 0 10px $color-facebook-dark;
+    border-color: $color-facebook;
+    color: $color-facebook;
+    &:hover{
+      border-color: $color-facebook-dark;
+      color: $color-facebook-dark;
+    }
+  }
+  .whatsapp{
+    box-shadow: 0 0 10px $color-whatsapp-dark;
+    border-color: $color-whatsapp;
+    color: $color-whatsapp;
+    &:hover{
+      border-color: $color-whatsapp-dark;
+      color: $color-whatsapp-dark;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@media screen and (max-width: 320px){
+  .start{
+    .logo_container{
+      margin: 20px;
+    }
+    .caption_container{
+      font-size: 18px;
+    }
+  }
+  .home{
+    grid-template-rows: 180px 1fr;
+    &_img_container{
+      padding: 0;
+    }
+    &_title{
+      font-size: 20px;
+    }
+  }
+  .contact{
+    &_img_container{
+      padding: 0;
+    }
+    &_title{
+      font-size: 20px;
+    }
+    &_link{
+      font-size: 18px;
+    }
+  }
+  .first-section{
+    grid-template-rows: 180px 1fr;
+  }
+  .last-section{
+    grid-template-rows: 215px 1fr;
+  }
+}
